@@ -12,13 +12,13 @@
          <div class="title">
             Signup 
          </div>
-         <form>
+         <form id="register">
             <div class="field">
                <input type="text" id="name" required>
                <label>Name</label>
             </div>
             <div class="field">
-               <input type="text" id="email" required>
+               <input type="email" id="email" required>
                <label>Email Address</label>
             </div>
             <div class="field">
@@ -45,8 +45,9 @@
     
     <script type="module">
 
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
         
         const firebaseConfig = {
           apiKey: "AIzaSyApyPyRNnmSf2JZMdSd8tLuOHNzZDGP9VQ",
@@ -74,7 +75,29 @@
                   window.location.replace("/index.html");
                }, 1000);
             });
-        
-    </script>
+
+      const auth = getAuth();
+
+      document.getElementById("register").addEventListener("click", function() {
+         var email =  document.getElementById("email").value;
+         var password = document.getElementById("pass").value;
+         //For new registration
+         createUserWithEmailAndPassword(auth, email, password)
+         .then((userCredential) => {
+         // Signed in 
+         const user = userCredential.user;
+         console.log(user);
+         alert("Registration successfully!!");
+         // ...
+         })
+         .catch((error) => {
+         const errorCode = error.code;
+         const errorMessage = error.message;
+         // ..
+         console.log(errorMessage);
+         });		  		  
+      });
+         
+      </script>
    </body>
 </html>
