@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashstyle.css">
+    <title>Document</title>
+</head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+ 
+    <body>
+        <div class="mainapp">
+          <header class="header">
+            <h1 class="header-logo">FareShare.com</h1>
+            <div class="header-content">
+              <div class="header-search">
+                <input type="text" class="search-field" placeholder="Search..." />
+                <button type="submit" class="search-btn">
+                  <i class="ph-magnifying-glass-bold"></i>
+                </button>
+              </div>
+              <button class="header-avatar">
+                <span class="header-avatar-img"></span>
+                <span class="header-avatar-name">Mihir Amin</span>
+              </button>
+            </div>
+          </header>
+          <main class="main">
+            <nav class="nav">
+              <ul class="tabs">
+                <li class="tab">
+                  <button class="tab-btn tab-btn--active">
+                    <i class="ph-lightbulb-bold"></i>
+                    <span class="tab-btn-title">Overview</span>
+                  </button>
+                </li>
+                <li class="tab">
+                  <button class="tab-btn">
+                    <i class="ph-arrows-left-right-bold"></i>
+                    <span class="tab-btn-title">Make Group</span>
+                  </button>
+                </li>
+                <li class="tab">
+                  <button class="tab-btn">
+                    <i class="ph-credit-card-bold"></i>
+                    <span class="tab-btn-title">History</span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <div class="content">
+              <div class="content-header">
+                <div class="content-header-inner">
+                  <h1 class="content-header-title">
+                    So far we have paid, <br />
+                    <small>₹65,000.00</small>
+                  </h1>
+                  <div class="content-header-info">
+                    Click below to pay ⬇️
+                    <a href="#" style="margin-top: 10%;" class="link"
+                      ><form>
+                        <script
+                          src="https://checkout.razorpay.com/v1/payment-button.js"
+                          data-payment_button_id="rzp_test_xsiOz9lYtWKHgF"
+                          async
+                        ></script></form
+                    ></a>
+                  </div>
+                </div>
+                <div class="content-header-illustration">
+                  <img style="border-radius: 10%;" src="/media/food.jpg" />
+                </div>
+              </div>
+    
+              <div class="content-body" style="margin-top: 10px;">
+                <section class="overview">
+                  <header class="overview-header">
+                    <h2 class="overview-header-title">
+                      Friends who have not paid <span>7</span>
+                    </h2>
+                    <a href="#" class="link">View all</a>
+                  </header>
+                  <div class="overview-body">
+                    <div class="summary">
+                      <h3 class="summary-date">September 11, 2001</h3>
+                      <span class="summary-amount" style="color: red;"
+                        >-₹21,000.00</span
+                      >
+                    </div>
+                    <div class="list">
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure class="list-item-company-logo">
+                            <img src="/media/avatar/4.png" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Parthiv</h4>
+                            <a href="#" class="list-item-company-hashtag"
+                              >#Veg</a
+                            >
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value"
+                              style="color: red;"
+                            >
+                              <i class="ph-arrows-clockwise-bold"></i>-₹20,000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="17:00"
+                            ></time>
+                          </div>
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure class="list-item-company-logo">
+                            <img src="https://iili.io/HvUduup.png" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Dhvanil</h4>
+                            <a href="#" class="list-item-company-hashtag"
+                              >#JainBaba</a
+                            >
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value list-item-transaction-value--positive"
+                              style="color: red;"
+                            >
+                              -₹25000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="11:30"
+                              >11:30am</time
+                            >
+                          </div>
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure class="list-item-company-logo">
+                            <img src="https://iili.io/HvUdAwN.png" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Mihir</h4>
+                            <a href="#" class="list-item-company-hashtag"
+                              >#Gainzz</a
+                            >
+                            <a href="#" class="list-item-company-hashtag"></a>
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value"
+                              style="color: red;"
+                            >
+                              -₹20000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="11:23"
+                              >11:23am</time
+                            >
+                          </div>
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure class="list-item-company-logo">
+                            <img src="https://iili.io/HvUdoFa.jpg" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Jeet</h4>
+                            <a href="#" class="list-item-company-hashtag"
+                              >#Gigachad</a
+                            >
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value"
+                              style="color: red;"
+                            >
+                              -₹25000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="10:00"
+                              >10:00am</time
+                            >
+                          </div>overview-foo
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="overview-footer">
+                    <a href="#" class="link"
+                      >View all transactions<i class="ph-arrow-right-bold"></i
+                    ></a>
+                  </footer>
+                </section>
+                <section class="overview">
+                  <header class="overview-header">
+                    <h2 class="overview-header-title">
+                      Friends who paid<span>3</span>
+                    </h2>
+                    <a href="#" class="link">View all</a>
+                  </header>
+                  <div class="overview-body">
+                    <div class="list">
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure
+                            class="list-item-company-logo list-item-company-logo--square"
+                          >
+                            <img src="/media/avatar/3.png" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Bilva Vyas</h4>
+                            <a href="#" class="list-item-company-hashtag">#Veg</a>
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value"
+                              style="color: green;"
+                            >
+                              <i class="ph-arrows-clockwise-bold"></i>+₹20,000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="2020-09-23T16:00:00"
+                              >April 18, 2023 at 4:00pm</time
+                            >
+                          </div>
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure
+                            class="list-item-company-logo list-item-company-logo--square"
+                          >
+                            <img src="https://iili.io/HvUdxcJ.png" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Yashvi Dalsaniya</h4>
+                            <a href="#" class="list-item-company-hashtag">#Veg</a>
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value"
+                              style="color: green;"
+                              ><i class="ph-arrows-clockwise-bold"></i> +₹20,000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="2020-09-26T17:00:00"
+                              >April 17, 2023 at 5:00pm</time
+                            >
+                          </div>
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="list-item-company">
+                          <figure
+                            class="list-item-company-logo list-item-company-logo--square"
+                          >
+                            <img src="https://iili.io/HvUdT9R.jpg" />
+                          </figure>
+                          <div class="list-item-company-info">
+                            <h4 class="list-item-company-name">Mitresh Modi</h4>
+                            <a href="#" class="list-item-company-hashtag"
+                              >#FOOOOOOODIE</a
+                            >
+                          </div>
+                        </div>
+                        <div class="list-item-transaction">
+                          <div class="list-item-transaction-values">
+                            <span
+                              class="list-item-transaction-value"
+                              style="color: green;"
+                              ><i class="ph-arrows-clockwise-bold"></i>
+                              +₹25,000.00
+                            </span>
+                            <time
+                              class="list-item-transaction-time"
+                              datetime="2020-09-27T21:00:00"
+                              >April 17, 2023 at 9:00pm</time
+                            >
+                          </div>
+                          <button class="list-item-transaction-action">
+                            <i class="ph-caret-down-bold"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="overview-footer">
+                    <a href="#" class="link"
+                      >View all payments<i class="ph-arrow-right-bold"></i
+                    ></a>
+                  </footer>
+                </section>
+              </div>
+            </div>
+          </main>
+        </div>
+</body>
+</html>
