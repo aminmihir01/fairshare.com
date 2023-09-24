@@ -174,15 +174,15 @@ What other features we wish to implement in FairShare.com ?
 
 Conclusion: 
 
-Our goal is to make a world where fare are distribute users and organizations to create positive change through responsible and equitable resource allocation. We aim to provide a service that not only manage the group finances but in a stress-free and just manner. We hope that this website/app gets on par with top finance services like PhonePe and GooglePay so we can provide this hassle free enjoyable group experience to everybody around the world. 
+	Our goal is to make a world where fare are distribute users and organizations to create positive change through responsible and equitable resource allocation. We aim to provide a service that not only manage the group finances but in a stress-free and just manner. We hope that this website/app gets on par with top finance services like PhonePe and GooglePay so we can provide this hassle free enjoyable group experience to everybody around the world. 
 
 GitHub : “https://github.com/aminmihir01/fairshare.com/tree/main”
 
  Project Proposal Prepared By:
- Amin Mihir         : (mihiramin99@gmail.com)
- Jeet Chauhan       : ( chauhanjj1999@gmail.com)
- Yashvi Dalsaniya : (yashvi.p.dalsaniya@gmail.com)
- Dhvanil Shah       : (officialdhvanil007@gmail.com)
- Bilva Vyas            : (vyasbilva@gmail.com)
+	 Amin Mihir         : (mihiramin99@gmail.com)
+	 Jeet Chauhan       : ( chauhanjj1999@gmail.com)
+	 Yashvi Dalsaniya : (yashvi.p.dalsaniya@gmail.com)
+	 Dhvanil Shah       : (officialdhvanil007@gmail.com)
+	 Bilva Vyas            : (vyasbilva@gmail.com)
 
 Team : <CodeCrafters> 
