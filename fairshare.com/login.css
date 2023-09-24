@@ -129,3 +129,18 @@ form .pass-link a:hover,
 form .signup-link a:hover{
   text-decoration: underline;
 }
+.header-logo {
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.wrapper .title{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #ffffff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c098, #4159d098);
+}
