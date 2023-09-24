@@ -21,7 +21,7 @@
               </div>
               <button class="header-avatar">
                 <span class="header-avatar-img"></span>
-                <span class="header-avatar-name">Mihir Amin</span>
+                <span class="header-avatar-name"></span>
               </button>
             </div>
           </header>
@@ -35,10 +35,13 @@
                   </button>
                 </li>
                 <li class="tab">
-                  <button class="tab-btn">
+                  <!-- <a href="/fairshare.com-main/fairshare.com/make_grp.html"> -->
+                    <button class="tab-btn"><a href="/fairshare.com-main/fairshare.com/make_grp.html">
                     <i class="ph-arrows-left-right-bold"></i>
-                    <span class="tab-btn-title">Make Group</span>
+                    <span class="tab-btn-title">Make Group</span></a>
                   </button>
+                <!-- </a> -->
+                
                 </li>
                 <li class="tab">
                   <button class="tab-btn">
@@ -91,7 +94,7 @@
                       <div class="list-item">
                         <div class="list-item-company">
                           <figure class="list-item-company-logo">
-                            <img src="/media/avatar/4.png" />
+                            <img src="/media/avatar/2.png" />
                           </figure>
                           <div class="list-item-company-info">
                             <h4 class="list-item-company-name">Parthiv</h4>
@@ -335,5 +338,8 @@
             </div>
           </main>
         </div>
+        <script>
+          document.getElementsByClassName("header-avatar-name")[0].innerHTML = localStorage.getItem("data");
+        </script>
 </body>
 </html>
