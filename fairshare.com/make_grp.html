@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mkgrp.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-database-compat.js"></script>
+
+</head>
+<body >
+        <div class="cookie-card">
+            <span class="title">🤝 Make Group</span>
+            <div class="header-search">
+                <input type="text" class="search-field" placeholder="Search..." id="search"/>
+                <button type="submit" class="search-btn">
+                <i class="ph-magnifying-glass-bold"></i>
+                </button>
+            </div>
+            <div class="actions">
+                <input type="number" class="amt" id="totalamt" style="padding-right: 0px;"/>
+                <button class="accept" id="add">
+                    <i class="ph ph-plus-bold"></i>
+                </button><br>
+                <span id="edit"></span>
+            </div>
+        </div>
+
+        <script type="module">
+
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+            import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+   
+            const firebaseConfig = {
+               apiKey: "AIzaSyApyPyRNnmSf2JZMdSd8tLuOHNzZDGP9VQ",
+               authDomain: "fairshare-test1.firebaseapp.com",
+               databaseURL: "https://fairshare-test1-default-rtdb.firebaseio.com",
+               projectId: "fairshare-test1",
+               storageBucket: "fairshare-test1.appspot.com",
+               messagingSenderId: "675255510685",
+               appId: "1:675255510685:web:efabecbff6161f64d99674",
+               measurementId: "G-8JHNB8EQNV"
+             };
+            
+            firebase.initializeApp(firebaseConfig);
+            const database = firebase.database();
+   
+            // send data
+            document.getElementById("add").addEventListener('click', function(e){
+               // fetch data
+               var fetchedData = database.ref('user/');
+               fetchedData.on('value', (snapshot) => {
+                  var data = snapshot.val();
+                  var a = [];
+                  for (var key in data) {
+                     var value = data[key];
+                     var email = value.email;
+                    
+                     console.log(email);
+
+                    var emails = email;
+
+                    var search = document.getElementById('search').value;
+                    var b=search.split(', ')
+                    // console.log(b);
+                    for(var key in b){
+                        if(b[key]==email){
+                            a.push(b);
+                        }
+                    }
+                    // if(emails==document.getElementById('search').value){
+                    //     a.push(document.getElementById('search').value);
+                    // }
+                    // console.log(a.length);
+                    localStorage.setItem("data", emails);	  		  
+                  }
+                  var totalamt = document.getElementById('totalamt').value;
+                  var people = a[0].length;
+                  var amtperp = totalamt/people;
+                  document.getElementById('edit').innerHTML="₹"+amtperp+" Per Person";
+               });
+            });
+        </script>
+
+</body>
+</html>
