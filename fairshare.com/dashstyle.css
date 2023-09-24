@@ -385,3 +385,5 @@ img {
   justify-content: center;
   padding-top: 1.25rem;
 }
+
+a{all : unset;} 
