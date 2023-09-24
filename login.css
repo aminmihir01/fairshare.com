@@ -13,6 +13,13 @@ html,body{
   background: #f2f2f2;
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
 }
+.heading1{
+  color: #262626;
+  font-size: larger;
+  text-align: center;
+  padding-right: 5px;
+}
+
 ::selection{
   background: #4158d0;
   color: #fff;
